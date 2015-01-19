@@ -1,0 +1,58 @@
+# list stuff
+alias ll='ls -lah --color'                                      # the ultimate list tool LL
+alias ls='ls --color=auto'					# normal ls with color
+
+
+# misc
+alias d='date +%d.%m.%Y-%R'                                     # show date fast
+alias cl='clear'                                                # clear     
+alias killx='pkill -15 X'                                       # kill X
+alias cp='rsync -r --progress'                                  # set default cp to rsync --progress
+alias hg='history | grep '                                      # grep history
+alias grep='grep --color=auto '                                 # grep color
+alias sbrc="source ~/.bashrc"                                   # reload bashrc
+
+# set default cp to rsync --progress
+alias scsht='scrot -s "~/images/screenshots/%Y%m%d-screenshot.png"'
+    
+    
+# Navigate up directory
+alias ..="cd .."
+alias ...="cd ../.."
+alias .....="cd ../../.."
+
+# ssh connections internet
+alias itwm="ssh -X -i /home/ddaneker/.ssh/id_rsa_dd_priv daneker@ssh.itwm.fhg.de"
+alias itwmt="sshrc -X -i /home/ddaneker/.ssh/id_rsa_dd_priv daneker@ssh.itwm.fhg.de"
+alias aegon="ssh -i ~/.ssh/id_rsa_local picsofdansenberg.de"
+alias aegonr="ssh root@picsofdansenberg.de"
+alias mountaegon="sshfs ddaneker@picsofdansenberg.de:/volume1/ ~/mount_tmp/ -o IdentityFile=~/.ssh/id_rsa_local "
+alias unmountaegon="fusermount -u ~/mount_tmp"
+
+# ssh proxy
+alias itwmp="ssh -D 8527 -i /home/ddaneker/.ssh/id_rsa_dd_priv daneker@ssh.itwm.fhg.de"
+
+
+# ssh connections local
+alias laegon="ssh -i ~/.ssh/id_rsa_local nas-of-aegon"
+alias laegonr="ssh root@nas-of-aegon"
+alias aemon="ssh nas-of-aemon"
+alias htpc="ssh -i ~/.ssh/id_rsa_local htpc-lr-jonsnow"
+
+
+# git
+alias gi="git init "                # repository anlegen
+alias gib="git init --bare "        # 'ober'-repository anlegen
+alias ga="git add "                 # Datei/Ordner in den Index schreiben
+alias gap="git add -p "             # Datei/Ordner in den Index schreiben in Schritten
+alias gr="git reset "               # Datei/Ordner aus den Index schreiben
+alias grp="git reset -p "           # Datei/Ordner aus den Index schreiben in Schritten
+alias gc="git commit "              # Index mit Repository synchen
+alias gst="git status "             # status
+alias gsh="git show "               # show
+alias gl="git log "                 # log
+alias gd="git diff"                 # diff zwischen workarea und index
+alias gds="git diff --staged"       # diff zwischen index und repo
+alias gdw="git diff --word-diff"    # diff ganzen woerter
+
+
