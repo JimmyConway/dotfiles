@@ -30,3 +30,6 @@ function mkcd () {
   mkdir -p "$1"
   cd "$1"
 }
+function cpbak () {
+  cp "$1"{,.bak}
+}

@@ -1,13 +1,12 @@
 # list stuff
 alias ll='ls -lah --color'                                      # the ultimate list tool LL
 alias ls='ls --color=auto'					# normal ls with color
-
-
+ 
 # misc
 alias d='date +%d.%m.%Y-%R'                                     # show date fast
 alias cl='clear'                                                # clear     
 alias killx='pkill -15 X'                                       # kill X
-alias cp='rsync -r --progress'                                  # set default cp to rsync --progress
+#alias cp='rsync -r --progress'                                  # set default cp to rsync --progress
 alias hg='history | grep '                                      # grep history
 alias grep='grep --color=auto '                                 # grep color
 alias sbrc="source ~/.bashrc"                                   # reload bashrc
@@ -54,5 +53,4 @@ alias gl="git log "                 # log
 alias gd="git diff"                 # diff zwischen workarea und index
 alias gds="git diff --staged"       # diff zwischen index und repo
 alias gdw="git diff --word-diff"    # diff ganzen woerter
-
 
