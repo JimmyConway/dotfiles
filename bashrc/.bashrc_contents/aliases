@@ -11,6 +11,12 @@ alias hg='history | grep '                                      # grep history
 alias grep='grep --color=auto '                                 # grep color
 alias sbrc="source ~/.bashrc"                                   # reload bashrc
 
+# pacman
+alias pacup="sudo pacman -Syyu"                                 # update pacman
+alias paci="sudo pacman -S"                                     # install
+alias pacr="sudo pacman -R"                                     # remove
+alias pacu="sudo pacman -U"                                     # install package
+
 # set default cp to rsync --progress
 alias scsht='scrot -s "~/images/screenshots/%Y%m%d-screenshot.png"'
     
