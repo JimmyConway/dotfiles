@@ -27,12 +27,11 @@ alias ...="cd ../.."
 alias .....="cd ../../.."
 
 # ssh connections internet
-alias itwm="ssh -X -i /home/ddaneker/.ssh/id_rsa_dd_priv daneker@ssh.itwm.fhg.de"
-alias itwmt="sshrc -X -i /home/ddaneker/.ssh/id_rsa_dd_priv daneker@ssh.itwm.fhg.de"
-alias aegon="ssh -i ~/.ssh/id_rsa_local picsofdansenberg.de"
-alias aegonr="ssh root@picsofdansenberg.de"
 alias mountaegon="sshfs ddaneker@picsofdansenberg.de:/volume1/ ~/mount_tmp/ -o IdentityFile=~/.ssh/id_rsa_local "
 alias unmountaegon="fusermount -u ~/mount_tmp"
+alias itwm="ssh itwm"
+alias aegon="ssh aegon"
+alias aegonr="ssh aegonr"
 
 # ssh proxy
 alias itwmp="ssh -D 8527 -i /home/ddaneker/.ssh/id_rsa_dd_priv daneker@ssh.itwm.fhg.de"
