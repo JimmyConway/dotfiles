@@ -32,16 +32,17 @@ alias unmountaegon="fusermount -u ~/mount_tmp"
 alias itwm="ssh itwm"
 alias aegon="ssh aegon"
 alias aegonr="ssh aegonr"
+alias raspi="ssh raspi"
 
 # ssh proxy
-alias itwmp="ssh -D 8527 -i /home/ddaneker/.ssh/id_rsa_dd_priv daneker@ssh.itwm.fhg.de"
+alias itwmp="ssh itwmp"
 
 
 # ssh connections local
 alias laegon="ssh -i ~/.ssh/id_rsa_local nas-of-aegon"
 alias laegonr="ssh root@nas-of-aegon"
 alias aemon="ssh nas-of-aemon"
-alias htpc="ssh -i ~/.ssh/id_rsa_local htpc-lr-jonsnow"
+alias htpc="ssh htpc"
 
 
 # git
