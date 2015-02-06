@@ -33,6 +33,7 @@ alias itwm="ssh itwm"
 alias aegon="ssh aegon"
 alias aegonr="ssh aegonr"
 alias lord="ssh lord"
+alias samwell="ssh samwell"
 
 # ssh proxy
 alias itwmp="ssh itwmp"
