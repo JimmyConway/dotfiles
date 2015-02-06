@@ -32,7 +32,7 @@ alias unmountaegon="fusermount -u ~/mount_tmp"
 alias itwm="ssh itwm"
 alias aegon="ssh aegon"
 alias aegonr="ssh aegonr"
-alias raspi="ssh raspi"
+alias lord="ssh lord"
 
 # ssh proxy
 alias itwmp="ssh itwmp"
