@@ -1,1 +1,9 @@
-xinput disable 10
+HOST=${HOSTNAME}
+# echo $HOST
+
+
+if [[ "${HOST}" == "nb-dy-stannis" ]]; then
+    xinput disable 10
+fi
+
+
