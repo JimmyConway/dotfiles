@@ -6,7 +6,7 @@ alias ls='ls --color=auto'					# normal ls with color
 alias d='date +%d.%m.%Y-%R'                                     # show date fast
 alias cl='clear'                                                # clear     
 alias killx='pkill -15 X'                                       # kill X
-#alias cp='rsync -r --progress'                                  # set default cp to rsync --progress
+alias cp='rsync -a --progress'                                  # set default cp to rsync --progress
 alias hg='history | grep '                                      # grep history
 alias grep='grep --color=auto '                                 # grep color
 alias sbrc="source ~/.bashrc"                                   # reload bashrc
@@ -27,9 +27,6 @@ alias itwmp="ssh itwmp"
 
 
 # ssh connections local
-alias laegon="ssh -i ~/.ssh/id_rsa_local nas-of-aegon"
-alias laegonr="ssh root@nas-of-aegon"
-alias aemon="ssh nas-of-aemon"
 alias htpc="ssh htpc"
 
 
@@ -47,4 +44,10 @@ alias gl="git log "                 # log
 alias gd="git diff"                 # diff zwischen workarea und index
 alias gds="git diff --staged"       # diff zwischen index und repo
 alias gdw="git diff --word-diff"    # diff ganzen woerter
+
+
+# debain apt-get
+alias aptud="sudo apt-get update"
+alias aptug="sudo apt-get upgrade"
+alias apti="sudo apt-get install"
 
