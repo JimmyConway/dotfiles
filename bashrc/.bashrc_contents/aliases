@@ -51,3 +51,5 @@ alias aptud="sudo apt-get update"
 alias aptug="sudo apt-get upgrade"
 alias apti="sudo apt-get install"
 
+# dotfiles
+alias cpy_dot="sh ~/git/dotfiles/_scripts/all.sh"

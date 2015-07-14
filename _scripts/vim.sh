@@ -5,4 +5,4 @@ git_path=~/git
 
 
 
-cp -rf $git_path/dotfiles/vim/.vimrc* ~/
+cp -rf $git_path/dotfiles/vim/.vim* ~/
