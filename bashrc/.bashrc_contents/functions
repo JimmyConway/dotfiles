@@ -33,3 +33,10 @@ function mkcd () {
 function cpbak () {
   cp "$1"{,.bak}
 }
+
+function f () {
+  find . -iname "*$1*"
+}
+
+
+
