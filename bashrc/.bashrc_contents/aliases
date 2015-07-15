@@ -5,22 +5,30 @@ dns=$(dnsdomainname)
 
 # list stuff
 alias ll='ls -lah --color'                                      # the ultimate list tool LL
-alias ls='ls --color=auto'					# normal ls with color
+alias ls='ls --color=auto'                             					# normal ls with color
  
 # misc
 alias d='date +%d.%m.%Y-%R'                                     # show date fast
 alias cl='clear'                                                # clear     
 alias killx='pkill -15 X'                                       # kill X
-alias cp='rsync -a --progress'                                  # set default cp to rsync --progress
-alias hg='history | grep '                                      # grep history
+alias hg='history | grep -i'                                      # grep history
 alias grep='grep --color=auto '                                 # grep color
 alias sbrc="source ~/.bashrc"                                   # reload bashrc
+alias dutotal="du -ch 2> /dev/null |tail -1"                    # reload bashrc
+
+# change standard stuff
+alias cp='rsync -a --progress'                                  # cp to rsync --progress
+alias mkdir='mkdir -pv'                                         # mkdir with parents+verbose
+alias mount='sudo mount'
+alias umount='sudo umount'
 
     
 # Navigate up directory
-alias ..="cd .."
-alias ...="cd ../.."
-alias .....="cd ../../.."
+alias .1="cd .."
+alias .2="cd ../.."
+alias .3="cd ../../.."
+alias .4="cd ../../../.."
+alias .5="cd ../../../../.."
 
 # ssh connections internet
 alias itwm="ssh itwm"
@@ -59,6 +67,11 @@ alias apti="sudo apt-get install"
 # dotfiles
 alias cpy_dot="sh ~/git/dotfiles/_scripts/all.sh"
 
+
+# system information
+alias meminfo='free -m -l -t'
+alias cpuinfo='lscpu'
+    
 
 
 if [[ "${dns}" == "itwm.fhg.de" ]]; then
