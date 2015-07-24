@@ -21,7 +21,7 @@ alias cp='rsync -a --progress'                                  # cp to rsync --
 alias mkdir='mkdir -pv'                                         # mkdir with parents+verbose
 alias mount='sudo mount'
 alias umount='sudo umount'
-alias rm='rm -rfi'
+alias rm='rm -rf'
 
     
 # Navigate up directory
