@@ -78,7 +78,7 @@ alias cpuinfo='lscpu'
 if [[ "${dns}" == "itwm.fhg.de" ]]; then
   export PRINTER=cpsG0a
 
-  alias magma='ssh magma@m820-heger.mdf.devinet.itwm.fhg.de'      # hegerpro-magma -- magma
+  alias magma='ssh magma@m820-heger.mdf.devnet.itwm.fhg.de'       # hegerpro-magma -- magma
   alias magmar='ssh root@m820-heger.mdf.devnet.itwm.fhg.de'       # hegerpro-magma -- root
   alias sn1='ssh sn1'                                             # sn1
   alias misc='ssh lnxmgmt'                                        # lnxmgmt
