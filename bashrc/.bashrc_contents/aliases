@@ -17,7 +17,7 @@ alias sbrc="source ~/.bashrc"                                   # reload bashrc
 alias dutotal="du -ch 2> /dev/null |tail -1"                    # reload bashrc
 
 # change standard stuff
-alias cp='rsync -a --progress'                                  # cp to rsync --progress
+alias cp='rsync -avh --progress --stats'                        # cp to rsync --progress
 alias mkdir='mkdir -pv'                                         # mkdir with parents+verbose
 alias mount='sudo mount'
 alias umount='sudo umount'
