@@ -22,6 +22,7 @@ alias mkdir='mkdir -pv'                                         # mkdir with par
 alias mount='sudo mount'
 alias umount='sudo umount'
 alias rm='rm -rf'
+alias sudo='sudo '
 
     
 # Navigate up directory
@@ -58,6 +59,8 @@ alias gl="git log "                 # log
 alias gd="git diff"                 # diff zwischen workarea und index
 alias gds="git diff --staged"       # diff zwischen index und repo
 alias gdw="git diff --word-diff"    # diff ganzen woerter
+alias gpull="git pull origin master" # pull master
+alias gpush="git push origin master" # push master
 
 
 # debain apt-get
