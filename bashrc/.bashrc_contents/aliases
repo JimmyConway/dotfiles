@@ -100,7 +100,8 @@ fi
 
 
 
-
+# autocorrect
+alias suod="sudo"
 
 
 
