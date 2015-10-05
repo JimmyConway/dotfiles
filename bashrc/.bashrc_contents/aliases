@@ -63,10 +63,14 @@ alias gpull="git pull origin master" # pull master
 alias gpush="git push origin master" # push master
 
 
-# debain apt-get
+# debian apt-get
 alias aptud="sudo apt-get update"
 alias aptug="sudo apt-get upgrade"
 alias apti="sudo apt-get install"
+
+# rhel apt-get
+alias yumupdate="sudo yum update"
+alias yuminstall="sudo yum install"
 
 # dotfiles
 alias cpy_dot="sh ~/git/dotfiles/_scripts/all.sh"
