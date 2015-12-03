@@ -11,8 +11,8 @@ export PS1='[@\h:\W]\$ '
 
 
 
-source ~/.bashrc_contents/aliases
 source ~/.bashrc_contents/functions
+source ~/.bashrc_contents/aliases
 source ~/.bashrc_contents/colors
 source ~/.bashrc_contents/lscolors
 source ~/.bashrc_contents/variables

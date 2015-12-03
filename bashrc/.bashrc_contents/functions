@@ -48,3 +48,10 @@ function minecraft () {
   #java -Dhttp.proxyHost=127.0.0.1 -Dhttp.proxyPort=25579 -Dhttps.proxyHost=localhost -Dhttps.proxyPort=25579 -jar ~/soft/minecraft/Minecraft.jar
   java -jar ~/soft/minecraft/Minecraft.jar
 }
+
+function psd () {
+  ps auxwww | awk '$8 ~ /D/'
+}
+function psz () {
+  ps auxwww | awk '$8 ~ /Z/'
+}
