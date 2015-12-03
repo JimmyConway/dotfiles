@@ -55,3 +55,7 @@ function psd () {
 function psz () {
   ps auxwww | awk '$8 ~ /Z/'
 }
+
+function gcctest () {
+  g++ *.cpp -o file
+}
