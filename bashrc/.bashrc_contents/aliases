@@ -25,6 +25,12 @@ alias umount='sudo umount'
 alias rm='rm -rf'
 alias sudo='sudo '
 
+# spelling typos 
+alias xs='cd'
+alias vf='cd'
+alias moer='more'
+alias moew='more'
+alias kk='ll'
     
 # Navigate up directory
 alias .1="cd .."
@@ -87,7 +93,6 @@ if [[ "${dns}" == "itwm.fhg.de" ]]; then
   export PRINTER=cpsG0a
 
   alias magma='ssh magma@m820-heger.mdf.devnet.itwm.fhg.de'       # hegerpro-magma -- magma
-#  alias magmar='ssh root@m820-heger.mdf.devnet.itwm.fhg.de'       # hegerpro-magma -- root
   alias magmar='ssh magmar'                                       # hegerpro-magma -- root
   alias sn1='ssh sn1'                                             # sn1
   alias misc='ssh lnxmgmt'                                        # lnxmgmt
@@ -103,8 +108,6 @@ fi
 
 # autocorrect
 alias suod="sudo"
-
-
 
 
 

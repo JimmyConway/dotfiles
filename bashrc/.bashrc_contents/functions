@@ -59,3 +59,8 @@ function psz () {
 function gcctest () {
   g++ *.cpp -o file
 }
+
+function evalssh () {
+  eval "$(ssh-agent -s)"
+  ssh-add ~/.ssh/id_rsa_git
+}
