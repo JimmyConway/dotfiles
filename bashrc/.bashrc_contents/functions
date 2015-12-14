@@ -64,3 +64,7 @@ function evalssh () {
   eval "$(ssh-agent -s)"
   ssh-add ~/.ssh/id_rsa_git
 }
+
+function vmcclient () {
+    awk '/administrator/ {print $2;}' ~/.pw/p_vmcvi | rdp -g 1920x1100 -u administrator -p - vmc-client.mdf.devnet
+}
