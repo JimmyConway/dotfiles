@@ -33,6 +33,10 @@ alias moer='more'
 alias moew='more'
 alias kk='ll'
     
+
+# make sudo
+alias yum='sudo yum'
+
 # Navigate up directory
 alias .1="cd .."
 alias .2="cd ../.."
