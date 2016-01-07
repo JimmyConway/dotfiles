@@ -118,6 +118,7 @@ if [[ "${dns}" == "itwm.fhg.de" ]]; then
   alias newhost='sudo /opt/itwm/bin/newhost'
   alias hostsearchbymac='sudo /opt/itwm/bin/hostsearchbymac'
   alias hostsearchbycn='sudo /opt/itwm/bin/hostsearchbycn'
+  alias hostdel='sudo /opt/itwm/bin/hostdel'
 fi
 
 
