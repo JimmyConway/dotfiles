@@ -114,6 +114,10 @@ if [[ "${dns}" == "itwm.fhg.de" ]]; then
   alias pit='cd /p/slg/'                                          # p/slg
   alias depot='cd /p/slg/Depot'                                   # Depot
   alias dokumente='cd /p/slg/Dokumente'                           # Dokumente
+  alias hostadd='sudo /opt/itwm/bin/hostadd'
+  alias newhost='sudo /opt/itwm/bin/newhost'
+  alias hostsearchbymac='sudo /opt/itwm/bin/hostsearchbymac'
+  alias hostsearchbycn='sudo /opt/itwm/bin/hostsearchbycn'
 fi
 
 
