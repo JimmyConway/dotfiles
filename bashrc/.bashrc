@@ -2,13 +2,16 @@
 # ~/.bashrc
 #
 
+if [ -f /etc/bashrc ]
+  then
+    source /etc/bashrc
+fi
+
+
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
 export PS1='[@\h:\W]\$ '
-
-
-
 
 
 source ~/.bashrc_contents/functions
