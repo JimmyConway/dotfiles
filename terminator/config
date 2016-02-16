@@ -1,37 +1,57 @@
 [global_config]
-  enabled_plugins = CustomCommandsMenu, InactivityWatch, TestPlugin, ActivityWatch, TerminalShot, LaunchpadCodeURLHandler, APTURLHandler, MavenPluginURLHandler, LaunchpadBugURLHandler, LayoutManager
-  title_transmit_bg_color = "#87cefa"
+  borderless = TRUE
+  title_transmit_bg_color = "#d30102"
+  focus = system
+  window_state = fullscreen
   use_system_font = True
-  font = Mono 11
-  background_color="#5d5d5d"
-  foreground_color="#ffffff"
-  borderless=true
-  window_state=fullscreen
-  scrollbar_position=hidden
+  font = Mono 12
 [keybindings]
 [profiles]
   [[default]]
-    scrollback_lines = 4000
+    # solarized-dark
+    palette = "#073642:#dc322f:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#002b36:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
+    background_color = "#eee8d5"
+    foreground_color = "#002b36"
+    cursor_color = "#002b36"
+    scrollback_lines = 5000
+
+  [[solarized-dark]]
+    palette = "#073642:#dc322f:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#002b36:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
+    foreground_color = "#eee8d5"
+    background_color = "#002b36"
+    cursor_color = "#eee8d5"
+    scrollback_lines = 5000
+
+  [[solarized-light]]
+    palette = "#073642:#dc322f:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#002b36:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
+    background_color = "#eee8d5"
+    foreground_color = "#002b36"
+    cursor_color = "#002b36"
+    scrollback_lines = 5000
+
 [layouts]
   [[default]]
     [[[child1]]]
       type = Terminal
       parent = window0
+      profile = solarized-light
     [[[window0]]]
       type = Window
       parent = ""
-  [[3term]]
+[[3term]]
     [[[child0]]]
       position = 1440:0
       type = Window
       order = 0
       parent = ""
       size = 1920, 1200
+      profile = solarized-light
     [[[child1]]]
       position = 600
       type = VPaned
       order = 0
       parent = child0
+      profile = solarized-light
     [[[child2]]]
       position = 960
       type = HPaned
