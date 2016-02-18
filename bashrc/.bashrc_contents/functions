@@ -39,6 +39,9 @@ function f () {
   find . -iname "*$1*"
 }
 
+function google () {
+  find . -iname "*$1*"
+}
 
 function minecraft () {
   if [[ "${dns}" == "itwm.fhg.de" ]]; then

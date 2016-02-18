@@ -18,6 +18,8 @@ alias sbrc="source ~/.bashrc"                                   # reload bashrc
 alias dutotal="du -ch 2> /dev/null |tail -1"                    # show total size of folder
 alias largest="du -a . | sort -n -r | head -n 10"               # show largest files
 alias p="ps aux | grep -i $1 | grep -v grep"
+alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
+
 
 # change standard stuff
 alias cp='rsync -avh --progress --stats'                        # cp to rsync --progress
