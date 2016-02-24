@@ -71,3 +71,7 @@ function evalssh () {
 function vmcclient () {
     awk '/administrator/ {print $2;}' ~/.pw/p_vmcvi | rdp -g 1920x1100 -u administrator -p - vmc-client.mdf.devnet
 }
+
+function knowhosts () {
+  sed -i $1'd' ~/.ssh/known_hosts
+}
