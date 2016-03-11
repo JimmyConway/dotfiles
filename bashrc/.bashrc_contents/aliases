@@ -124,6 +124,9 @@ if [[ "${dns}" == "itwm.fhg.de" ]]; then
   alias hostsearchbymac='sudo /opt/itwm/bin/hostsearchbymac'
   alias hostsearchbycn='sudo /opt/itwm/bin/hostsearchbycn'
   alias hostdel='sudo /opt/itwm/bin/hostdel'
+#  alias cdpuppetpro='cd /etc/puppet/environments/production'
+#  alias cdpuppetdev='cd /etc/puppet/environments/devel'
+  alias cdpuppet='cd /etc/puppet/environments/*'
 fi
 
 

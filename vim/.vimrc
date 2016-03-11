@@ -52,3 +52,8 @@
   set tabstop=2
   set expandtab
 
+execute pathogen#infect()
+
+map <C-n> :NERDTreeToggle<CR>
+
+
