@@ -21,7 +21,6 @@ source ~/.bashrc_contents/lscolors
 source ~/.bashrc_contents/variables
 source ~/.bashrc_contents/execute
 source ~/.bashrc_contents/exports
+source ~/.bashrc_contents/gitprompt
 
 # dummy
-source ~/.bash-git-prompt/gitprompt.sh
-  GIT_PROMPT_ONLY_IN_REPO=1
