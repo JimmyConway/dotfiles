@@ -4,6 +4,9 @@ git_path=~/git
 
 
 
+cd $git_path/dotfiles
+git submodule init
+git submodule update
 
 sh $git_path/dotfiles/_scripts/vim.sh
 sh $git_path/dotfiles/_scripts/bashrc.sh
