@@ -28,3 +28,6 @@
 [submodule "bashrc/.bash-git-prompt"]
 	path = bashrc/.bash-git-prompt
 	url = https://github.com/magicmonty/bash-git-prompt.git
+[submodule "bashrc/.liquidprompt"]
+	path = bashrc/.liquidprompt
+	url = https://github.com/nojhan/liquidprompt.git
