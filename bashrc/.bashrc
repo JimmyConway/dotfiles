@@ -23,4 +23,3 @@ source ~/.bashrc_contents/execute
 source ~/.bashrc_contents/exports
 source ~/.bashrc_contents/gitprompt
 
-# dummy
