@@ -9,7 +9,13 @@ GIT_PROMPT_ONLY_IN_REPO=1
 # GIT_PROMPT_STATUS_COMMAND=gitstatus_pre-1.7.10.sh # uncomment to support Git older than 1.7.10
 
 # GIT_PROMPT_START=...    # uncomment for custom prompt start sequence
+ResetColor="\[\033[0m\]"        # Text Reset
+Yellow="\[\033[0;33m\]"         # Yellow
+White='\[\033[37m\]'            # White
+
+GIT_PROMPT_START="\n_LAST_COMMAND_INDICATOR_ \A: ${Yellow}\w${ResetColor}"    
 # GIT_PROMPT_END=...      # uncomment for custom prompt end sequence
+GIT_PROMPT_END=" \u@${Yellow}\h${ResetColor}:\$"
 
 # as last entry source the gitprompt script
 # GIT_PROMPT_THEME=Custom # use custom .git-prompt-colors.sh
