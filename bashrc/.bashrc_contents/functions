@@ -43,15 +43,6 @@ function google () {
   find . -iname "*$1*"
 }
 
-function minecraft () {
-  if [[ "${dns}" == "itwm.fhg.de" ]]; then
-    ssh -L 25579:localhost:25579 minecraft@blocks-of-empire.de -v -v -v  -i ~/.ssh/id_rsa_private_fhg -N &
-#    ssh -L 25579:localhost:25579 daneker@alwaysinprogress.de -v -v -v  -i ~/.ssh/id_rsa_private_fhg -N &
-  fi
-  #java -Dhttp.proxyHost=127.0.0.1 -Dhttp.proxyPort=25579 -Dhttps.proxyHost=localhost -Dhttps.proxyPort=25579 -jar ~/soft/minecraft/Minecraft.jar
-  java -jar ~/soft/minecraft/Minecraft.jar
-}
-
 function psd () {
   ps auxwww | awk '$8 ~ /D/'
 }
@@ -66,10 +57,6 @@ function gcctest () {
 function evalssh () {
   eval "$(ssh-agent -s)"
   ssh-add ~/.ssh/id_rsa_git
-}
-
-function vmcclient () {
-    awk '/administrator/ {print $2;}' ~/.pw/p_vmcvi | rdp -g 1920x1100 -u administrator -p - vmc-client.mdf.devnet
 }
 
 function knowhosts () {
