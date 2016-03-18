@@ -7,6 +7,6 @@ if [[ "${HOST}" == "nb-dy-stannis" ]]; then
 fi
 
 
-if [[ "${HOST}" == "e180it04" ]]; then
-  xrandr --output DVI-I-0 --mode 1920x1200 --right-of DP-0 
-fi
+#if [[ "${HOST}" == "e180it04" ]]; then
+#  xrandr --output DVI-I-0 --mode 1920x1200 --right-of DP-0 
+#fi
