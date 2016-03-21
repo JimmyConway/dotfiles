@@ -12,7 +12,6 @@
   set gcr=a:blinkon0              "Disable cursor blink
   set visualbell                  "No sounds
   set autoread                    "Reload files changed outside vim
-  set cursorline                  "Highlight current line
 
   set statusline=%f
   set statusline+=%y
