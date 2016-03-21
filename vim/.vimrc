@@ -12,6 +12,10 @@
   set gcr=a:blinkon0              "Disable cursor blink
   set visualbell                  "No sounds
   set autoread                    "Reload files changed outside vim
+  set cursorline                  "Highlight current line
+
+  set statusline=%f
+  set statusline+=%y
 
 " This makes vim act like all other editors, buffers can
 " exist in the background without being in a window.
@@ -23,19 +27,6 @@
 
   colorscheme harlequin
 
-" Change leader to a comma because the backslash is too far away
-" That means all \x commands turn into ,x
-" The mapleader has to be set before vundle starts loading all 
-" the plugins.
-  let mapleader=","
-
-" =============== Vundle Initialization ===============
-" This loads all the plugins specified in ~/.vim/vundles.vim
-" Use Vundle plugin to manage all other plugins
-  if filereadable(expand("~/.vim/vundles.vim"))
-    source ~/.vim/vundles.vim
-  endif
-	
 " ================ Turn Off Swap Files ==============
 
   set noswapfile
@@ -56,4 +47,5 @@ execute pathogen#infect()
 
 map <C-n> :NERDTreeToggle<CR>
 
-
+" clear the search buffer when hitting return
+:nnoremap <CR> :nohlsearch<cr>
