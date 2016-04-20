@@ -63,3 +63,8 @@ function knowhosts () {
   sed -i $1'd' ~/.ssh/known_hosts
 }
 
+function maketar() { 
+  tar cvzf "${1%%/}.tar.gz"  "${1%%/}/"; 
+}
+
+
