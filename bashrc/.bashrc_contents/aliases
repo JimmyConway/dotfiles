@@ -23,6 +23,7 @@ alias p="ps aux | grep -i $1 | grep -v grep"
 alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
 #alias wcmuilti="find /dir -type d -exec sh -c "echo -n {} ' ' ; ls -1 {} | wc -l" \;"
 #alias rh='sed -i -e ${1}d ~/.ssh/known_hosts.tmp'
+alias cddl='cd /volume1/downloads/'
 
 
 # change standard stuff
