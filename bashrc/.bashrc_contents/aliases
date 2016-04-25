@@ -113,7 +113,6 @@ if [[ "${dns}" == "itwm.fhg.de" ]]; then
   alias miscf='ssh lnxmgmt "firefox -P misc --no-remote"'         # linux management -- firefox
   alias namgmt='ssh namgmt'                                       # connect to root
   alias vmc='rdp -g 1920x1100 172.18.26.26'                       # rdp to vmc server
-  #alias wts='cat ~/.pw/p_wts | rdp -p -  wts001it'   # rdp to wts001it
   alias ypc='ssh sn1 ypcat passwd | grep -i '                     # ypcat passwd
 
   #cd into
