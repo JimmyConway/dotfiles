@@ -109,9 +109,9 @@ if [[ "${dns}" == "itwm.fhg.de" ]]; then
   alias magma='ssh magma@m820-heger.mdf.devnet.itwm.fhg.de'       # hegerpro-magma -- magma
   alias magmar='ssh magmar'                                       # hegerpro-magma -- root
   alias sn1='ssh sn1'                                             # sn1
-  alias misc='ssh lnxmgmt'                                        # lnxmgmt
-  alias miscr='ssh root@lnxmgmt'                                  # lnxmgmt as root
-  alias miscf='ssh lnxmgmt "firefox -P misc --no-remote"'         # linux management -- firefox
+  alias lnxmgmt='ssh lnxmgmt'                                     # lnxmgmt
+  alias lnxmgmtr='ssh lnxmgmtr'                                   # lnxmgmt as root
+  alias lnxmgmtf='ssh lnxmgmt "firefox -P misc --no-remote"'      # linux management -- firefox
   alias namgmt='ssh namgmt'                                       # connect to root
   alias vmc='rdp -g 1920x1100 172.18.26.26'                       # rdp to vmc server
   alias ypc='ssh sn1 ypcat passwd | grep -i '                     # ypcat passwd
