@@ -9,6 +9,8 @@ set readonly
 " My xterms have a navy-blue background, so I need this line too.
 set background=light
 
+set noswapfile
+
 " Turn syntax on
 syntax enable
 
