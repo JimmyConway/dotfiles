@@ -105,7 +105,7 @@ alias cpuinfo='lscpu'
 
 if [[ "${dns}" == "itwm.fhg.de" ]]; then
   export PRINTER=cpsG0a
-  export PATH=$PATH:~/git/phonebook/bin
+  export PATH=$PATH:~/git/phonebook-cli/bin
 
   alias magma='ssh magma@m820-heger.mdf.devnet.itwm.fhg.de'       # hegerpro-magma -- magma
   alias magmar='ssh magmar'                                       # hegerpro-magma -- root
