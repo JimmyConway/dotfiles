@@ -7,6 +7,10 @@ export LSCOLORS=ExFxBxDxCxegedabagacad
 export HISTSIZE=1000                          # HISTSIZE sets the number of history items
 export HISTCONTROL=ignoredups                 # no two instances of a command in a row
 
+if [ -d ~/bin/ ]; then
+  export PATH=$PATH:~/bin
+fi
+
 if [[ "${dns}" == "itwm.fhg.de" ]]; then
     export MODULEPATH=$MODULEPATH:~/soft/etc/modules/
 fi
