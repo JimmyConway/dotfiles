@@ -44,7 +44,7 @@ alias kk='ll'
     
 
 # make sudo
-alias yum='sudo yum'
+#alias yum='sudo yum'
 
 # Navigate up directory
 alias .1="cd .."
