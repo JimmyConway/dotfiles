@@ -48,3 +48,6 @@ map <C-n> :NERDTreeToggle<CR>
 
 " clear the search buffer when hitting return
 :nnoremap <CR> :nohlsearch<cr>
+
+command W :execute ':silent w !sudo tee % > /dev/null' | :edit!
+
