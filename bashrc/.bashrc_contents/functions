@@ -59,7 +59,7 @@ function evalssh () {
   ssh-add ~/.ssh/id_rsa_git
 }
 
-function knowhosts () {
+function knownhosts () {
   sed -i $1'd' ~/.ssh/known_hosts
 }
 
