@@ -114,6 +114,7 @@ if [[ "${dns}" == "itwm.fhg.de" ]]; then
   alias lnxmgmtr='ssh lnxmgmtr'                                   # lnxmgmt as root
   alias lnxmgmtp='ssh -f -N lnxmgmtp'                             # run proxy in lnxmgmt
   alias lnxmgmtf='ssh lnxmgmt "firefox -P misc --no-remote"'      # linux management -- firefox
+  alias cupsp='ssh -f -N cupsp'                                   # run proxy in cups
   alias namgmt='ssh namgmt'                                       # connect to root
   alias vmc='rdp -g 1920x1100 172.18.26.26'                       # rdp to vmc server
   alias ypc='ssh sn1 ypcat passwd | grep -i '                     # ypcat passwd
