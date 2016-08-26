@@ -41,6 +41,7 @@
   set softtabstop=2
   set tabstop=2
   set expandtab
+  set pastetoggle=<F10>
 
 execute pathogen#infect()
 
