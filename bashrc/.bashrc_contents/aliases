@@ -25,6 +25,7 @@ alias p="ps aux | grep -i $1 | grep -v grep"
 #alias rh='sed -i -e ${1}d ~/.ssh/known_hosts.tmp'
 alias cddl='cd /volume1/downloads/'
 alias vless='vim -u ~/.vimrc.more'
+alias n='noice'
 
 
 # change standard stuff
@@ -117,7 +118,7 @@ if [[ "${dns}" == "itwm.fhg.de" ]]; then
   alias cupsp='ssh -f -N cupsp'                                   # run proxy in cups
   alias namgmt='ssh namgmt'                                       # connect to root
   alias vmc='rdp -g 1920x1100 172.18.26.26'                       # rdp to vmc server
-  alias ypc='ssh sn1 ypcat passwd | grep -i '                     # ypcat passwd
+  alias dd_ypcat='ypcat passwd | grep -i '                        # ypcat passwd
 
   #cd into
   alias scratch='cd /m/scratch/itwm/daneker'                      # scratch
