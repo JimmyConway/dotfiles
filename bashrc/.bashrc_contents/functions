@@ -112,3 +112,49 @@ function getcertnames() {
 		return 1;
 	fi;
 }
+function dd_hardwareinformation {
+  if [ $HOSTTYPE = x86_64 ]; then
+    arch="\033[32m64bit\033[0m"
+  else
+    arch="\033[31;1m32bit\033[0m"
+  fi
+  MACHTYPE=$(echo "${MACHTYPE:-unknown machine type}")
+  vendorinfo="$(cat /proc/cpuinfo | grep -i "vendor" | head -n 1 | /usr/bin/cut -d ':' -f 2 | sed "s/ //g") $HOSTTYPE"
+  cpuinfo="$(cat /proc/cpuinfo | grep -c "model name")x$(cat /proc/cpuinfo | grep -i "model name" | head -n 1 | /usr/bin/cut -d ':' -f 2 | sed "s/  //g") ($vendorinfo)"
+  memtotal="$(($(cat /proc/meminfo | grep -i "memtotal" | /usr/bin/cut -d ':' -f 2 | sed "s/ //g" | /usr/bin/cut -d 'k' -f 1) / 1024))"
+   memfree="$(($(cat /proc/meminfo | grep -i "memfree"  | /usr/bin/cut -d ':' -f 2 | sed "s/ //g" | /usr/bin/cut -d 'k' -f 1) / 1024))"
+  memthres="$(echo "( $memfree / $memtotal) < 0.2" | bc -l)"
+  raminfo="${memfree}MB of ${memtotal}MB"
+  if [ $memthres -eq 1 ]; then raminfo="\033[31;1m$raminfo\033[0m"; fi
+  users="$(who | cut -d' ' -f1 | sort | uniq | tr '\n' ' ')"
+  uptime="$(uptime)"
+  echo -e "\033[30;1m------------------------------------------------------------------------------\033[0m"
+  echo -e "\033[34;1mCurrent Server  \033[30;1m  $HOSTNAME ($MACHTYPE)\033[0m"
+  if [ -f /etc/SuSE-release ]; then
+    release="Unknown distribution"
+    releases="redhat-release mandrake-release SuSE-release gentoo-release turbolinux-release yoper-release overclockix-release"
+    for r in $releases; do
+      [ -r "/etc/$r" ] && release=$(cat /etc/$r | head -n 1)
+    done
+    echo -e "\033[34;1mOperating System \033[30;1m $release"
+    unset release
+  fi
+  echo -e "\033[34;1mProcessor(s)    \033[30;1m  $cpuinfo\033[0m $arch"
+  echo -e "\033[34;1mMemory used     \033[30;1m  $raminfo\033[0m"
+  echo -e "\033[34;1mUptime          \033[30;1m $uptime\033[0m"
+  echo -e "\033[34;1mUsers logged on \033[30;1m  $users\033[0m"
+  echo -e "\033[34;1mYou belong to   \033[30;1m  $(groups)"
+  quota=$(quota -s)
+  qu=$(echo $quota | awk '{print $18}'); qus=${qu:(-1)}; qun=${qu:0:$(expr ${#qu} - 1)}
+  qs=$(echo $quota | awk '{print $19}'); qss=${qs:(-1)}; qsn=${qs:0:$(expr ${#qs} - 1)}
+  qh=$(echo $quota | awk '{print $20}'); qhs=${qh:(-1)}; qhn=${qh:0:$(expr ${#qh} - 1)}
+  us=$(echo $quota | awk '{print $6}')
+  qfrees=$(expr $qsn - $qun)
+  qfreeh=$(expr $qhn - $qun)
+  quotaalert=""
+  echo -e "\033[34;1mQUOTA            \033[30;1m usage:${qu}B soft:${qs}B hard:${qh}B"
+  echo -e "\033[34;1mFREE             \033[30;1m soft:${qfrees}${qss}B  hard:${qfreeh}${qhs}B \033[0m"
+  echo -e "\033[30;1m------------------------------------------------------------------------------\033[0m"
+
+
+}
