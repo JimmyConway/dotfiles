@@ -128,7 +128,7 @@ function dd_hardwareinformation {
   if [ $memthres -eq 1 ]; then raminfo="\033[31;1m$raminfo\033[0m"; fi
   users="$(who | cut -d' ' -f1 | sort | uniq | tr '\n' ' ')"
   uptime="$(uptime)"
-  release="$(cat /etc/*release | grep '^NAME\|^VERSION=' | sed s/NAME=// | sed s/VERSION=// | sed s/\"//g | tr '\n' ' ')"
+  release="$(cat /etc/*release | grep '^NAME\|^VERSION=' | sed -r s/'(NAME=|VERSION=|\")'//g | tr '\n' ' ')"
   echo -e "\033[30;1m------------------------------------------------------------------------------\033[0m"
   echo -e "\033[34;1mCurrent Server  \033[30;1m  $HOSTNAME ($MACHTYPE)\033[0m"
   echo -e "\033[34;1mOperating System \033[30;1m $release"
