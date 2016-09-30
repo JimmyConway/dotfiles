@@ -151,3 +151,11 @@ function dd_hardwareinformation {
 
 
 }
+
+
+function cporig() {
+  cp $1{,.orig}
+}
+function mvorig() {
+  mv $1{,.orig}
+}
