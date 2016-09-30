@@ -43,6 +43,8 @@
   set expandtab
   set pastetoggle=<F10>
 
+  au BufNewFile,BufRead * if &syntax == '' | set syntax=sh | endif
+
 execute pathogen#infect()
 
 map <C-n> :NERDTreeToggle<CR>
