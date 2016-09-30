@@ -136,6 +136,7 @@ if [[ "${dns}" == "itwm.fhg.de" ]]; then
 #  alias cdpuppetpro='cd /etc/puppet/environments/production'
 #  alias cdpuppetdev='cd /etc/puppet/environments/devel'
   alias cdpuppet='cd /etc/puppet/environments/*'
+  alias cddepot='cd /p/slg/Depot'
   alias wts="remmina -c ~/.remmina/1458568359984.remmina"
 fi
 
