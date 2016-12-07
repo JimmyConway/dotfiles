@@ -54,3 +54,5 @@ map <C-n> :NERDTreeToggle<CR>
 
 command W :execute ':silent w !sudo tee % > /dev/null' | :edit!
 
+
+let g:PreviewBrowsers='chrome,firefox'

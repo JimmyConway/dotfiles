@@ -31,3 +31,6 @@
 [submodule "bashrc/.liquidprompt"]
 	path = bashrc/.liquidprompt
 	url = https://github.com/nojhan/liquidprompt.git
+[submodule "vim/.vim/bundle/CoVim"]
+	path = vim/.vim/bundle/CoVim
+	url = git://github.com/FredKSchott/CoVim.git
