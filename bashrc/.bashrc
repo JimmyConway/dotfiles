@@ -21,6 +21,7 @@ source ~/.bashrc_contents/lscolors
 source ~/.bashrc_contents/variables
 source ~/.bashrc_contents/execute
 source ~/.bashrc_contents/exports
+source ~/.bashrc_contents/package_manager
 #source ~/.bashrc_contents/gitprompt
 source ~/.bashrc_contents/liquidprompt
 
