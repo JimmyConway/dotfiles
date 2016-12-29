@@ -13,6 +13,10 @@
   set visualbell                  "No sounds
   set autoread                    "Reload files changed outside vim
 
+
+  set path+=**
+  set wildmenu
+
   set statusline=%f
   set statusline+=%y
 
