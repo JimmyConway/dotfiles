@@ -31,8 +31,6 @@ alias n='noice'
 # change standard stuff
 alias cp='rsync -avh --progress --stats'                        # cp to rsync --progress
 alias mkdir='mkdir -pv'                                         # mkdir with parents+verbose
-alias mount='sudo mount'
-alias umount='sudo umount'
 alias rm='rm -rf'
 alias sudo='sudo '
 
