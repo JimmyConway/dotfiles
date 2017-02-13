@@ -20,6 +20,7 @@ if [ -e "/usr/bin/apt-get" ] ; then # Apt-based distros (Debian, Ubuntu, etc.)
   dpkg="/usr/bin/dpkg"
   alias paci="$sudoaptget install"
   alias pacu="$sudoaptget update"
+  alias pacg="$sudoaptget upgrade"
   alias pacs="$aptcache search"
   alias pacinfo="$aptcache show"
   alias pacinstalled="$aptcache policy"
