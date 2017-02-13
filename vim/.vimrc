@@ -13,6 +13,7 @@
   set visualbell                  "No sounds
   set autoread                    "Reload files changed outside vim
 
+  set ignorecase
 
   set path+=**
   set wildmenu
@@ -55,8 +56,13 @@ map <C-n> :NERDTreeToggle<CR>
 
 " clear the search buffer when hitting return
 :nnoremap <CR> :nohlsearch<cr>
+nnoremap ; :
 
 command W :execute ':silent w !sudo tee % > /dev/null' | :edit!
+
+" set leader
+let mapleader=","
+
 
 
 let g:PreviewBrowsers='chrome,firefox'
