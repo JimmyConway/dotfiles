@@ -8,7 +8,9 @@ alias ll='ls -lah --color'                                      # the ultimate l
 alias ls='ls --color=auto'                             					# normal ls with color
  
 # misc
-alias d='date +%d.%m.%Y-%R'                                     # show date fast
+alias d='date +%d.%m.%Y-%R--KW:%V'    # show date fast
+
+alias kw='date --date=-1week +%V'                                # show kalenderwoche
 alias cl='clear'                                                # clear     
 alias lordvoldemort='clear'                                     # clear     
 alias killx='pkill -15 X'                                       # kill X
