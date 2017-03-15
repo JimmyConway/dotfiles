@@ -139,7 +139,7 @@ if [[ "${dns}" == "itwm.fhg.de" ]]; then
   alias cddepot='cd /p/slg/Depot'
   alias wts="remmina -c ~/.remmina/1458568359984.remmina"
   alias vpuppet="vim /etc/puppet/environments/*"
-  alias gmodule="export MODULEPATH=/var/tmp/linux-modules/"
+  alias gmodule="export MODULEPATH=~/git/linux-modules/"
 fi
 
 
