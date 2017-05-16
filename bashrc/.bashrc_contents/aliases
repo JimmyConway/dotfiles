@@ -28,6 +28,7 @@ alias p="ps aux | grep -i $1 | grep -v grep"
 alias cddl='cd /volume1/downloads/'
 alias vless='vim -u ~/.vimrc.more'
 alias n='noice'
+alias fuck='sudo $(history -p \!\!)'
 
 
 # change standard stuff
