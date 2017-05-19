@@ -63,6 +63,7 @@ command W :execute ':silent w !sudo tee % > /dev/null' | :edit!
 " set leader
 let mapleader=","
 
+filetype plugin on
 
 
 let g:PreviewBrowsers='chrome,firefox'
