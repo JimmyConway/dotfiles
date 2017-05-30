@@ -25,3 +25,4 @@ source ~/.bashrc_contents/package_manager
 #source ~/.bashrc_contents/gitprompt
 source ~/.bashrc_contents/liquidprompt
 
+set -o vi
