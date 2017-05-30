@@ -18,6 +18,10 @@ set bell-style none
 "\e\e[C": forward-word
 "\e\e[D": backward-word
 
+"\e[A": history-search-backward
+"\e[B": history-search-forward
+
+
 #"\e[1;3D": backward-word 
 #"\e[1;3C": forward-word 
 #
