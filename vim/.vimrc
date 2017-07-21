@@ -49,6 +49,14 @@
   set pastetoggle=<F10>
 
   au BufNewFile,BufRead * if &syntax == '' | set syntax=sh | endif
+  
+" Enable folding
+set foldmethod=indent
+set foldlevel=99
+
+" Enable folding with the spacebar
+nnoremap <space> za
+
 
 execute pathogen#infect()
 
