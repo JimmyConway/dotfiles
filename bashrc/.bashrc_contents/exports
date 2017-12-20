@@ -13,4 +13,5 @@ fi
 
 if [[ "${dns}" == "itwm.fhg.de" ]]; then
     export MODULEPATH=$MODULEPATH:~/soft/etc/modules/
+    export GPGKEY=FC8C433F
 fi
