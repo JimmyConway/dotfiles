@@ -159,3 +159,7 @@ function cporig() {
 function mvorig() {
   mv $1{,.orig}
 }
+
+function vmfirefox() {
+  vmware-view -s vvp.itwm.fhg.de -u daneker -p "$(pass main/windows/daneker)" -a "Mozilla Firefox" -q 2> /dev/null
+}
