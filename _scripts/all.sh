@@ -12,3 +12,4 @@ sh $git_path/dotfiles/_scripts/vim.sh
 sh $git_path/dotfiles/_scripts/bashrc.sh
 sh $git_path/dotfiles/_scripts/misc.sh
 sh $git_path/dotfiles/_scripts/terminator.sh
+sh $git_path/dotfiles/_scripts/shellrc.sh
