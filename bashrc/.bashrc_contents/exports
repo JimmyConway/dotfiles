@@ -1,7 +1,7 @@
 export EDITOR=vim
 export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
-
+export PASSWORD_STORE_X_SELECTION=primary
 
  #history
 export HISTSIZE=1000                          # HISTSIZE sets the number of history items
