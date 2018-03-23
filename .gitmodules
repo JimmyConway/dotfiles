@@ -37,3 +37,6 @@
 [submodule "vim/.vim/bundle/vim-simple-todo"]
 	path = vim/.vim/bundle/vim-simple-todo
 	url = https://github.com/vitalk/vim-simple-todo
+[submodule "vim/.vim/bundle/vim-markdown-preview"]
+	path = vim/.vim/bundle/vim-markdown-preview
+	url = https://github.com/JamshedVesuna/vim-markdown-preview

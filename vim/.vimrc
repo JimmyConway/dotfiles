@@ -75,3 +75,6 @@ filetype plugin on
 
 
 let g:PreviewBrowsers='chrome,firefox'
+
+
+let vim_markdown_preview_github=1
