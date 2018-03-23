@@ -134,6 +134,8 @@ if [[ "${dns}" == "itwm.fhg.de" ]]; then
   alias hostsearchbymac='sudo /opt/itwm/bin/hostsearchbymac'
   alias hostsearchbycn='sudo /opt/itwm/bin/hostsearchbycn'
   alias hostdel='sudo /opt/itwm/bin/hostdel'
+  alias userinfo='sudo /opt/idm/bin/userinfo'
+  alias setuserpasswd='sudo /opt/idm/bin/setuserpasswd'
   alias searchusername='ssh sn1 ypcat passwd | grep -i $1'        # ypcat search for username
 #  alias cdpuppetpro='cd /etc/puppet/environments/production'
 #  alias cdpuppetdev='cd /etc/puppet/environments/devel'
