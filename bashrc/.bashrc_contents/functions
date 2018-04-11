@@ -163,6 +163,11 @@ function mvorig() {
 function vmfirefox() {
   vmware-view -s vvp.itwm.fhg.de -u daneker -p "$(pass main/windows/daneker)" -a "Mozilla Firefox" -q 2> /dev/null
 }
+
 function vmword() {
   vmware-view -s vvp.itwm.fhg.de -u daneker -p "$(pass main/windows/daneker)" -a "Microsoft Word" -q 2> /dev/null
+}
+
+function vmvisio() {
+  vmware-view -s vvp.itwm.fhg.de -u daneker -p "$(pass main/windows/daneker)" -a "Microsoft Visio" -q 2> /dev/null
 }
