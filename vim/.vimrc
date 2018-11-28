@@ -71,7 +71,10 @@ command W :execute ':silent w !sudo tee % > /dev/null' | :edit!
 " set leader
 let mapleader=","
 
+
+python import jedi
 filetype plugin on
+autocmd FileType python setlocal omnifunc=jedi#completions
 
 
 let g:PreviewBrowsers='chrome,firefox'

@@ -1,5 +1,4 @@
 [global_config]
-  borderless = TRUE
   title_transmit_bg_color = "#d30102"
   focus = system
   window_state = fullscreen
