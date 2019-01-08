@@ -49,6 +49,9 @@ function psd () {
 function psz () {
   ps auxwww | awk '$8 ~ /Z/'
 }
+function psram () {
+  ps aux  | awk '{print $6/1024 " MB\t\t" $11}'  | sort -rn | head -25
+}
 
 function gcctest () {
   g++ *.cpp -o file
