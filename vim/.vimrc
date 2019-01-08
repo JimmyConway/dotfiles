@@ -74,8 +74,7 @@ let mapleader=","
 
 python import jedi
 filetype plugin on
-autocmd FileType python setlocal omnifunc=jedi#completions
-
+autocmd FileType python setlocal ts=4 sw=4 omnifunc=jedi#completions
 
 let g:PreviewBrowsers='chrome,firefox'
 
