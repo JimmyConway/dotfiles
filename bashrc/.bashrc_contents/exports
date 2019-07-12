@@ -16,3 +16,7 @@ if [[ "${dns}" == "itwm.fhg.de" ]]; then
     export MODULEPATH=$MODULEPATH:/m/usoft/etc
     export GPGKEY=FC8C433F
 fi
+
+if [[ "${HOST}" == "lnxmgmt" ]]; then
+    export PATH=$PATH:/m/soft/spack/bin
+fi
