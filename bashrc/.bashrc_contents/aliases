@@ -114,6 +114,8 @@ if [[ "${dns}" == "itwm.fhg.de" ]]; then
   alias magmar='ssh magmar'                                       # hegerpro-magma -- root
   alias sn1='ssh sn1'                                             # sn1
   alias lnxmgmt='ssh lnxmgmt'                                     # lnxmgmt
+  alias lls1r='ssh lls1r'                                   # lnxmgmt as root
+  alias lls2r='ssh lls2r'                                   # lnxmgmt as root
   alias lnxmgmtr='ssh lnxmgmtr'                                   # lnxmgmt as root
   alias lnxmgmtp='ssh -f -N lnxmgmtp'                             # run proxy in lnxmgmt
   alias lnxmgmtf='ssh lnxmgmt "firefox -P misc --no-remote"'      # linux management -- firefox

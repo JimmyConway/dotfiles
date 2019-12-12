@@ -19,4 +19,5 @@ fi
 
 if [[ "${HOST}" == "lnxmgmt" ]]; then
     export PATH=$PATH:/m/soft/spack/bin
+    export MODULEPATH=$MODULEPATH:/m/soft/spack/share/spack//modules/linux-centos7-x86_64
 fi
